@@ -1,8 +1,10 @@
-# censorship
+# Censorship
+*"Make MSVC shut the f- up again."*
 
-A CLI program designed to hide annoying MSVC-compiler messages.
+CLI program that prevents piped output containing specified words from being printed.
 
-Prevents output lines containing certain words from being printed.
+It was originally designed to hide annoying Windows XP depreciation messages when compiling with MSVC.
+
 
 ## Usage
 - Place banned words in `censor.txt`,`.censor.txt`,`censorship.txt` or `.censorship.txt`
@@ -10,8 +12,18 @@ Prevents output lines containing certain words from being printed.
 - Run any powershell command (from the location you placed the `.txt` file in) and pipe the output into censorship.exe
 
 ### Example
+
+censorship.txt
+```
+warning MSB8051
+deprecated
+```
+
+Powershell Terminal
 ```powershell
 cmake --build build | censorship.exe --verbose
+# or
+cmake --build build | censorship.exe
 ```
 
 ## Compilation

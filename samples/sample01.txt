@@ -1,0 +1,18 @@
+S:\censorship>build
+CMake is re-running because S:/censorship/build/CMakeFiles/generate.stamp is out-of-date.
+  the file 'S:/censorship/CMakeLists.txt'
+  is newer than 'S:/censorship/build/CMakeFiles/generate.stamp.depend'
+  result='-1'
+-- Configuring done
+-- Generating done
+-- Build files have been written to: S:/censorship/build
+MSBuild version 17.4.1+9a89d02ff for .NET Framework
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v150\Platforms\Win32\PlatformToolsets\v141_xp\Toolset.ta
+rgets(39,5): warning MSB8051: Support for targeting Windows XP is deprecated and will not be present in future releases of Visual Studio. Please see https://go.microsoft.com/fwlink/?linkid=2023588 for more information. [S:\censorship\build\ZERO_CHECK.vcxproj]
+  Checking Build System
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v150\Platforms\Win32\PlatformToolsets\v141_xp\Toolset.targets(39,5): warning MSB8051: Support for targeting Windows XP is deprecated and will not be present in future releases of Visual Studio. Please see https://go.microsoft.com/fwlink/?linkid=2023588 for more information. [S:\censorship\build\censorship.vcxproj]        
+  Building Custom Rule S:/censorship/CMakeLists.txt
+  censorship.cpp
+  censorship.vcxproj -> S:\censorship\build\Debug\censorship.exe
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v150\Platforms\Win32\PlatformToolsets\v141_xp\Toolset.targets(39,5): warning MSB8051: Support for targeting Windows XP is deprecated and will not be present in future releases of Visual Studio. Please see https://go.microsoft.com/fwlink/?linkid=2023588 for more information. [S:\censorship\build\ALL_BUILD.vcxproj]
+  Building Custom Rule S:/censorship/CMakeLists.txt

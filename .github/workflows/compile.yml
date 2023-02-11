@@ -1,0 +1,22 @@
+on:
+  push:
+    branch:
+      - "main"
+jobs:
+  build:
+    runs-on: 'Windows-latest'
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ilammy/msvc-dev-cmd@v1
+      - name: Build censorship 
+        run: |
+          build.bat
+      - name: "Upload zip with binaries"
+        uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "dev-${{ github.run_id }}-${{ github.run_attempt }}"
+          prerelease: false
+          title: "Censorship"
+          files: |
+            build\Release\censorship.exe

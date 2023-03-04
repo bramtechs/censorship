@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: ilammy/msvc-dev-cmd@v1
-      - name: Build censorship 
+      - name: Build censorship
         shell: cmd
         run: |
           call build.bat
